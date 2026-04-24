@@ -37,6 +37,7 @@ def map_row(row: dict[str, str]) -> dict[str, object]:
         "country": row["country"].strip(),
         "location_name": row["location_name"].strip(),
         "last_updated": parse_datetime(row["last_updated"]),
+        "temperature_celsius": float(row["temperature_celsius"]),
         "wind_degree": int(row["wind_degree"]),
         "wind_kph": float(row["wind_kph"]),
         "wind_direction": WindDirection(row["wind_direction"].strip()),

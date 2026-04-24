@@ -35,6 +35,7 @@ class WeatherRaw(Base):
     country: Mapped[str] = mapped_column(Text, nullable=False)
     location_name: Mapped[str] = mapped_column(Text, nullable=False)
     last_updated: Mapped[datetime] = mapped_column(DateTime, nullable=False)
+    temperature_celsius: Mapped[float] = mapped_column(Float, nullable=False)
 
     wind_degree: Mapped[int] = mapped_column(Integer, nullable=False)
     wind_kph: Mapped[float] = mapped_column(Float, nullable=False)
