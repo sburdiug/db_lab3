@@ -40,6 +40,7 @@ def map_row(row: dict[str, str]) -> dict[str, object]:
         "wind_degree": int(row["wind_degree"]),
         "wind_kph": float(row["wind_kph"]),
         "wind_direction": WindDirection(row["wind_direction"].strip()),
+        "temperature_celsius": float(row["temperature_celsius"]),
         "sunrise": parse_clock(row["sunrise"]),
         "sunset": parse_clock(row["sunset"]),
         "moonrise": parse_clock(row["moonrise"]),
