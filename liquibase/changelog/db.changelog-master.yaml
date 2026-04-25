@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: changes/001_split_weather_raw.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/003_add_should_go_outside.sql
+      relativeToChangelogFile: true
+  - include:
+      file: changes/002_drop_weather_raw.sql
+      relativeToChangelogFile: true
